@@ -1,4 +1,4 @@
-# python-calculator
+# Python calculator
 
 ## Description
 A simple CLI calculator in Python. The script ask two numbers and an operator 
