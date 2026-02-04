@@ -53,3 +53,4 @@ def division(a: float, b: float) -> float:
     :rtype: Float
     """
     return a / b
+
