@@ -1,56 +1,33 @@
 """This module contain all of the operations available to realize some operation
 on different numbers like addition, subtraction, multiplication and division"""
 
-def addition(a: float, b: float) -> float:
+def operation(a: float, b: float, operator) -> float:
     """
-    Addition operation
+    Docstring for operation
 
-    This function take two floats (work also with int) and return the result of 
-    their addition.
+    This function does basic operations like addition, subtraction, multiplicat-
+    ion and division
     
-    :param a: Float
-    :param b: Float
-    :rtype: Float
+    :param a: First number
+    :type a: float
+    :param b: Second number
+    :type b: float
+    :param operator: Operation had to be done
+    :return: Result of the operation
+    :rtype: float
     """
-    return a + b
-
-
-def subtraction(a: float, b: float) -> float:
-    """
-    Subtraction operation
-
-    This function take two floats (work also with int) and return the result of 
-    their subtraction.
+    #Addition
+    if operator == '+':
+        return a + b
     
-    :param a: Float
-    :param b: Float
-    :rtype: Float
-    """
-    return a - b
-
-def multiplication(a: float, b: float) -> float:
-    """
-    Multiplication operation
-
-    This function take two floats (work also with int) and return the result of 
-    their multiplication.
+    #Subtraction
+    elif operator == '-':
+        return a - b
     
-    :param a: Float
-    :param b: Float
-    :rtype: Float
-    """
-    return a * b
-
-def division(a: float, b: float) -> float:
-    """
-    Division operation
-
-    This function take two floats (work also with int) and return the result of 
-    their division.
+    #Multiplication
+    elif operator == "*":
+        return a * b
     
-    :param a: Float
-    :param b: Float
-    :rtype: Float
-    """
-    return a / b
-
+    #Division
+    else:
+        return a / b
